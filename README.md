@@ -14,13 +14,6 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn? 
-
 This project aims to create a device that will take the data from a Wii Guitar Extension Controller and transmit that data to a computer as an HID Device. 
 
 I am a fan of Guitar Hero and rhythm games in general. Guitar Hero was the first rhythm game I ever played and I played it on the Wii using the extension device that came with the game. I long sold the Wii, but I found out that there was a PC version of Guitar Hero called Clone Hero. Since I still had the extension device so I looked into connecting a Wii Remote to a windows computer. While you are able to connect a Wii controller via bluetooth to a Windows Computer it requires the use of third party uncertified drivers. This requires certain settings to turned off in Windows, such as test-signing. The downside of this is that it triggers anti-cheat softwares in competitive video games such as Valorant, making you unable to play those games with the settings turned off. Since these settings require a Computer Restart everytime they are changed, it makes it tedious to switch between games. 
