@@ -6,6 +6,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 - [Description](#description)
 - [Design](#design)
+- [Current State](#current-state-of-the-project)
 - [What would I do differently? What changes would I make?](#what-would-i-do-differently-what-changes-would-i-make)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -28,7 +29,7 @@ Start, 0xF0, 0x55, Stop, Start, 0xFB, 0x00, Stop
 
 The data is formatted into 6 bytes with the following bit structure with the default bit value being 1 for all of the buttons, changing to 0 when the button is pressed:
 
-(Insert Image Here)
+![Table breaking down the Data sent by the Wii Guitar Extension]()
 SX and SY refer to the x and y-axis of the analog stick. 
 WB refers to the analog whammy bar. 
 BD and BU refer to the strum bar. 
@@ -48,14 +49,23 @@ I chose to use a Vertical USB-C connector for two reasons. One is because USB-C 
 
 Three libraries are needed to program the board. The first is the Wire library which is needed to communicate with the Wii Guitar via I2C. The second library is LemmingDev’s ESP32-BLE-Gamepad library. This library makes it very easy to turn an ESP32 into a BLE Gamepad that can connect and send data to the computer. The final library that is needed is a dependence for the ESP32-BLE-Gamepad, the NimBLE-Arduino Library. 
 
+## Current State of the Project
+
+Between running a DRC Check and ordering the PCB, a 3.3V via was moved so that it intersectedthe GND Plane. I attempted to cut the via out of the 3.3V circuit an replace the trace with a wire, but I did not have the correct equipement to do it properly. Thus I have yet to test this specific design. I did have a battery charge module from Adafruit, as well as an ESP32 Microcontroller that I had designed previously (which has the same basic microcontoller circuitry that this design had) so I was able to test the code for functionality. The KiCAD files have been updated, and I plan to add a couple of features before repurchasing the board. 
+
 ## What would I do differently? What changes would I make?
 
 
 
 ## Installation
 
-What libraries and files are needed for this project?
-How do you upload code?
+What EDA libraries and files are needed for this project?
+- 
+What code libraries and files are needed for this project?
+- The Arduino Wire Library
+- LemmingDev’s ESP32-BLE-Gamepad Library
+- NimBLE-Arduino Library
+
 
 ## Usage
 
