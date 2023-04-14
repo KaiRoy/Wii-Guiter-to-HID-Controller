@@ -43,7 +43,7 @@ The block diagram above shows the basic outline for the circuit that will take i
 
 The ESP32, specifically the ESP32-WROOM-32D module, was chosen for the microcontroller because of its inbuilt Bluetooth Low Energy (BLE) Capability as well as my prior experience with designing custom boards for it from my Senior Design Class. My previous design already had the USB Controller (USB-to-UART Converter) and the ESP32, so the only thing that needed to be added was a Battery Management System (BMS) and a 3.3V Regulator. While the old 3.3V regulator Circuit would have worked, I did not know that at the time so I used TI’s WeBench to make a circuit capable of inputting 3.5V-5V and outputting a stable 5V. The circuit that was recommended used the TPS63001. The BQ24090 was chosen for the BMS circuit as one of the guides that I found used that IC for their own custom microcontroller. Another circuit that was added to the schematic was a reverse current protection circuit using the LM66100.
 
-![Device KiCad Schematic](/Images-Docs/Wii%20Guitar%20Schematic.pdf)
+![Device KiCad Schematic](/Images-Docs/Wii%20Guitar%20Schematic.png)
 ![Device KiCad PCB Layout](/Images-Docs/WIiiGuitarPCB.png)
 
 I chose to use a Vertical USB-C connector for two reasons. One is because USB-C is becoming much more common. The second reason is so that in the future, I can attach the board to a piece of acrylic and have the connector flush or near flush with the acrylic once the board is mounted. This idea of mounting is also why I have the programming button and JST connectors (for the battery and connection to the Wii Guitar) on the bottom of the board. Since the USB-C connector is an SMD component, I decided to have all of the SMD components on the same side, but in order for the USB-C to be placed correctly, I needed the other connectors to sit on the other side. Since this was being assembled by hand having all the SMD components on the same side would make it easier to assemble. 
@@ -55,7 +55,6 @@ Three libraries are needed to program the board. The first is the Wire library w
 Between running a DRC Check and ordering the PCB, a 3.3V via was moved so that it intersectedthe GND Plane. I attempted to cut the via out of the 3.3V circuit an replace the trace with a wire, but I did not have the correct equipement to do it properly. Thus I have yet to test this specific design. I did have a battery charge module from Adafruit, as well as an ESP32 Microcontroller that I had designed previously (which has the same basic microcontoller circuitry that this design had) so I was able to test the code for functionality. The KiCAD files have been updated, and I plan to add a couple of features before repurchasing the board. 
 
 ![Image 1 of Code Test Circuit](/Images-Docs/CodeTest1.jpg)
-![Image 2 of Code Test Circuit](/Images-Docs/CodeTest2.jpg)
 ![Image 3 of Code Test Circuit](/Images-Docs/CodeTest3.jpg)
 
 ## What would I do differently? What changes would I make?
