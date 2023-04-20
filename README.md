@@ -2,13 +2,11 @@
 
 ## Table of Contents
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
 - [Description](#description)
 - [Design](#design)
 - [Current State](#current-state-of-the-project)
 - [What would I do differently? What changes would I make?](#what-would-i-do-differently-what-changes-would-i-make)
-- [Installation](#installation)
+- [Installation](#installation) <!-- Should I have Installation and Usage above or below the Design, Current State, Changes, etc? -->
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
@@ -84,12 +82,19 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 ## Credits
 
 List your collaborators, if any, with links to their GitHub profiles.
+<!-- No Collaborators -->
 
 If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+<!-- List Code Libraries -->
+<!-- List 3rd Party Symbols and Footprints? -->
 
 If you followed tutorials, include links to those here as well.
+<!-- Link the Battery Charger Circuit Tutorial -->
+
 
 ## License
+
+<!-- Note which code version to use -->
 
 The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
 
