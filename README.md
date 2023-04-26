@@ -100,10 +100,11 @@ Third-Part assests used in this project:
 - Code Libraries
   - LemmingDev’s [ESP32-BLE-Gamepad](https://github.com/lemmingDev/ESP32-BLE-Gamepad) Library
   - H2zero's [NimBLE-Arduino](https://github.com/h2zero/NimBLE-Arduino/releases/tag/1.4.1) Library
-- 
+- EDA Libraries/Files
+  - Files pulled from []()
 
-If you followed tutorials, include links to those here as well.
-- 
+Tutorials that I followed:
+- Predictable Design's [How to Design a Battery Charger Circuit](https://www.youtube.com/watch?v=XBKOkvwgwNw)
 
 ## License
 
