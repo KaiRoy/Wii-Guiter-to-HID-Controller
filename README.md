@@ -30,6 +30,7 @@ Start, 0xF0, 0x55, Stop, Start, 0xFB, 0x00, Stop
 The data is formatted into 6 bytes with the following bit structure with the default bit value being 1 for all of the buttons, changing to 0 when the button is pressed:
 
 ![Table breaking down the Data sent by the Wii Guitar Extension](assests/Wii%20Guitar%20Data.png)
+
 SX and SY refer to the x and y-axis of the analog stick. 
 WB refers to the analog whammy bar. 
 BD and BU refer to the strum bar. 
