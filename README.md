@@ -1,6 +1,6 @@
 # HID Guitar Controller - Converting a Wii Guitar into a Windows Compatible HID Device
 
-![Image of the Device PCB]()
+![Image of the Device PCB]()	<!-- Add image of the PCB -->
 
 ## Table of Contents
 
@@ -44,7 +44,7 @@ The block diagram above shows the basic outline for the circuit that will take i
 The ESP32, specifically the ESP32-WROOM-32D module, was chosen for the microcontroller because of its inbuilt Bluetooth Low Energy (BLE) Capability as well as my prior experience with designing custom boards for it from my Senior Design Class. My previous design already had the USB Controller (USB-to-UART Converter) and the ESP32, so the only thing that needed to be added was a Battery Management System (BMS) and a 3.3V Regulator. While the old 3.3V regulator Circuit would have worked, I did not know that at the time so I used TI’s WeBench to make a circuit capable of inputting 3.5V-5V and outputting a stable 5V. The circuit that was recommended used the TPS63001. The BQ24090 was chosen for the BMS circuit as one of the guides that I found used that IC for their own custom microcontroller. Another circuit that was added to the schematic was a reverse current protection circuit using the LM66100.
 
 ![Device KiCad Schematic](assests/Wii%20Guitar%20Schematic.png)
-![Device KiCad PCB Layout](assests/WIiiGuitarPCB.png)
+![Device KiCad PCB Layout](assests/WIiiGuitarPCB.png)				<!-- Edit Image, Crop out White Dots -->
 
 I chose to use a Vertical USB-C connector for two reasons. One is because USB-C is becoming much more common. The second reason is so that in the future, I can attach the board to a piece of acrylic and have the connector flush or near flush with the acrylic once the board is mounted. This idea of mounting is also why I have the programming button and JST connectors (for the battery and connection to the Wii Guitar) on the bottom of the board. Since the USB-C connector is an SMD component, I decided to have all of the SMD components on the same side, but in order for the USB-C to be placed correctly, I needed the other connectors to sit on the other side. Since this was being assembled by hand having all the SMD components on the same side would make it easier to assemble. 
 
