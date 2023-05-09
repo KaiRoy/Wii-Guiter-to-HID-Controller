@@ -75,7 +75,7 @@ A reach idea that I had would be to add audio support to this device. Being able
 ## Installation
 
 What additional EDA libraries and files are needed for this project?
-- 
+- ESP32
 
 What code libraries and files are needed for this project?
 - The Arduino [Wire](https://www.arduino.cc/reference/en/language/functions/communication/wire/) Library
