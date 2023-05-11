@@ -1,13 +1,13 @@
 # HID Guitar Controller - Converting a Wii Guitar into a Windows Compatible HID Device
 
-![Image of the Device PCB]()	<!-- Add image of the PCB -->
+![Image of the Device PCB](/assests/DeviceV1.jpg)	<!-- Add image of the PCB -->
 
 ## Table of Contents
 
 - [Description](#description)
 - [Design](#design)
 - [Current State](#current-state-of-the-project)
-- [What would I do differently? What changes would I make?](#what-would-i-do-differently-what-changes-would-i-make)
+- [Post Project Notes](#post-project-notes)
 - [Installation](#installation) <!-- Should I have Installation and Usage above or below the Design, Current State, Changes, etc? -->
 - [Usage](#usage)
 - [Credits](#credits)
@@ -58,7 +58,7 @@ Between running a DRC Check and ordering the PCB, a 3.3V via was moved so that i
 ![Image 1 of Code Test Circuit](assests/CodeTest1.jpg)
 ![Image 3 of Code Test Circuit](assests/CodeTest3.jpg)
 
-## What would I do differently? What changes would I make?
+## Post Project Notes
 
 With this project being under a time limit, one of the things I would do differently is how I managed the project and my time. I would allocate specific times throughout my week and days to work on my project. This will allow me to make better progress throught the entire project timeline, giving me more time to catch errors such as the misplaced via that ultimately made the PCB I initially purchased unuseable. I would also allocate time to work on documentation during the developement of the project so that it is more than just an afterthought at the end of the project. 
 
@@ -74,8 +74,10 @@ A reach idea that I had would be to add audio support to this device. Being able
 
 ## Installation
 
+<!--
 What additional EDA libraries and files are needed for this project?
 - ESP32
+-->
 
 What code libraries and files are needed for this project?
 - The Arduino [Wire](https://www.arduino.cc/reference/en/language/functions/communication/wire/) Library
